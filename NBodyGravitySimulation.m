@@ -4,12 +4,15 @@ clearvars -except d r
 r = randi(100000)%815,5123(6)
 rng(r)%705410,1337,12816,723,8675309,17327218,1776,371753,86759,1121,1990,1578,179216,290811,122686
 
+N  = 3;% Number of objects
 writeCSVFile = false;
+% For drawing objects and tails
 tstep = 10;
 tlen = 500*tstep;
+
 kscale = 1e12;% numerical precision
 G  = 6.67e-11*kscale;
-N  = 3;
+
 cmap = cool(N);
 me = 2e24/kscale/kscale;
 m  = me*ones(N,1)';
